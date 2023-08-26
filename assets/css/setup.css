@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Sarala;
+}
+
+body {
+    background: #1717b9;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: #1F2026;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0D6EFF;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+}
+
+/* Conteudo */
+
+.meu_setup h1 {
+    font-family: 'Righteous';
+    color: white;
+    font-size: 50px;
+    margin-bottom: 8%;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.setupimg_column1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    margin-bottom: 4%;
+
+}
+
+.setupimg_column1 img {
+    width: 250px;
+}
+
+.meu_setup p {
+    font-family: 'Sarala';
+    color: white;
+    font-size: 20px;
+}
+
+.teclado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teclado img {
+    margin-top: 5%;
+}
+
+.teclado img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+
+.mouse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mouse img {
+    margin-top: 5%;
+}
+
+.mouse img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+
+.fone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fone img {
+    margin-top: 5%;
+}
+
+.fone img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+
+.mouse-pad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mouse-pad img {
+    margin-top: 5%;
+}
+
+.mouse-pad img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+
+.cadeira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadeira img {
+    margin-top: 5%;
+}
+
+.cadeira img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+
+.gabinete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gabinete img {
+    margin-top: 5%;
+}
+
+.gabinete img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+
+.monitor {
+    margin-top: 5%;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.monitor p {
+    text-align: center;
+    font-family: 'Sarala';
+    color: white;
+    font-size: 25px;
+}
+
+.monitor img {
+    margin-top: 3%;
+    width: 100%;
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+.monitor img:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+
+.especificacoes {
+    margin-bottom: 8%;
+}
+
+.especificacoes h1 {
+    font-family: 'Righteous';
+    color: white;
+    font-size: 50px;
+    margin-bottom: 8%;
+    text-align: center;
+    margin-top: 4%;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.especificacoes-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.txt-esp {
+    margin-left: 15%;
+}
+
+.txt-esp li {
+    font-family: 'Sarala';
+    color: white;
+    font-size: 18px;
+}
+
+.img-esp {
+    margin-right: 15%;
+}
+
+.img-esp img {
+    width: 450px;
+}
+
+.voltar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.voltar a {
+    color: white;
+    border: 2px solid #0D6EFF;
+    padding: 5px 25px;
+    border-radius: 9px;
+    transition: all .3s ease-in-out;
+    font-weight: 100;
+}
+
+.voltar a:hover {
+    background-color: #0D6EFF;
+    transition: 1.2s;
+    color: black;
+}
+
+
+@media screen and (max-width: 900px) {
+    .setupimg_column1 {
+        flex-wrap: wrap;
+    }
+
+    .img-esp img {
+        display: none;
+    }
+
+    .txt-esp {
+        text-align: left;
+    }
+    .txt-esp li {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .especificacoes h1 {
+        font-size: 30px;
+    }
+
+    .meu_setup h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .txt-esp li {
+        font-size: 13px;
+    }
+}

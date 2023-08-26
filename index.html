@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luan Machado</title>
+  <meta name="description" content="Olá, seja bem vindo ao meu portifólio.">
+
+  <!-- Links -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/jquery.css">
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script src="https://kit.fontawesome.com/7c3aef27c1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <!--Primeira parte-->
+  <div class="background">
+    <header class="menu animate__animated animate__fadeInDown">
+      <nav>
+
+        <div class="logo">
+          <a href="#"><img src="assets/img/logo-name.png" alt="Logo"></a>
+        </div>
+
+        <div id="nav-list">
+          <ul id="menu">
+            <li><a href="#" onclick="removeMenu()">Inicio</a></li>
+            <li><a href="#sobre" onclick="removeMenu()">Sobre</a></li>
+            <li><a href="#conhecimentos" onclick="removeMenu()">Conhecimentos</a></li>
+            <li><a href="#Projetos" onclick="removeMenu()">Projetos</a></li>
+            <li><a href="#servicos" onclick="removeMenu()">Serviços</a></li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu" id="nav">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="informacoes ">
+      <div class="logo-imagen">
+        <img src="assets/img/logo.png" alt="">
+      </div>
+
+      <div class="inf-text">
+        <h1>Luan Machado</h1>
+        <p id="descricao"></p>
+        <div class="redes animate__animated animate__lightSpeedInRight">
+          <a class="icones" href="https://instagram.com/luanmachadoyt" target="_blank"><i
+              class="fa-brands fa-redes-icon fa-instagram"></i></a>
+          <a class="icones" href="https://discord.gg/D5X7bRgazp" target="_blank"><i
+              class="fa-brands fa-redes-icon fa-discord"></i></a>
+          <a class="icones" href="https://github.com/luanmachadoyt" target="_blank"><i
+              class="fa-brands fa-redes-icon fa-github"></i></a>
+          <a class="icones" href="https://www.linkedin.com/in/luan-de-almeida-machado-9789721b3/" target="_blank"><i
+              class="fa-brands fa-redes-icon fa-linkedin"></i></a>
+          <a class="icones" href="https://youtube.com" target="_blank"><i
+              class="fa-brands fa-redes-icon fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Conteudo do site-->
+  <main>
+    <!--Sobre-->
+    <section class="sobre" id="sobre">
+      <div class="titulo">
+        <h1>Sobre</h1>
+        <div class="linha"></div>
+        <div class="sobre-conteudo">
+          <img src="assets/img/eu-sobre.png" alt="">
+          <div class="linha-sobre"></div>
+          <div class="conteudo-sobre">
+            <h1>Luan Machado</h1>
+            <h3>Desenvolvedor Front-end!</h3>
+            <p id="txt-sobre">Olá. seja bem vindo ao meu portifólio! Meu nome é Luan, Tenho 17 anos eu comecei na area
+              de desenvoledor em dezembro de 2022 até agora foquei mais em HTML e CSS. Estou começando o modulo de JS e
+              espero que eu consiga me qualificar. Por enquanto é so isso, Até mais!</p>
+            <a href="https://linkedin.com.br" target="_blank"><button href="#" class="btn-cv">Linkedin <i
+                  class="fa-solid fa-paper-plane"></i></button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Conhecimentos-->
+    <section class="conhecimentos" id="conhecimentos">
+      <div class="titulo">
+        <h1>Conhecimentos</h1>
+        <div class="linha"></div>
+        <div class="conteudo-conhecimentos">
+          <div class="texto-conhe">
+            <h1>Meus conhecimentos!</h1>
+            <p class="text-padrao txt-sobre" id="text-padrao">Passe o cursor do mouse em cima dos icones para ver meus
+              conhecimentos.</p>
+            <p class="hide animate__animated animate__pulse txt-sobre" id="text-css">CSS (Cascading Style Sheets) é um
+              mecanismo para adicionar estilos a
+              uma página web, aplicado diretamente nas tags HTML ou ficar contido dentro das tags</p>
+            <p class="hide animate__animated animate__pulse" id="text-html">HTML é uma linguagem de marcação utilizada
+              na construção de páginas na Web.
+              Documentos HTML podem ser interpretados por navegadores.</p>
+            <p class="hide animate__animated animate__pulse" id="text-js">JavaScript é uma linguagem de programação
+              interpretada
+              estruturada, de script
+              em alto nível com tipagem dinâmica fraca e multiparadigma. Juntamente com HTML e CSS.</p>
+            <p class="hide animate__animated animate__pulse" id="text-figma">Figma é um editor gráfico de vetor e
+              prototipagem de projetos de design
+              baseado principalmente no navegador web.</p>
+          </div>
+          <div class="linha-sobre"></div>
+          <div class="linguagens">
+            <div class="linguagen css3">
+              <i class="fa-brands fa-conhe-icon fa-css3-alt"></i>
+            </div>
+            <div class="linguagen html5">
+              <i class="fa-brands fa-conhe-icon fa-html5"></i>
+            </div>
+            <!-- <div class="linguagen js">
+              <i class="fa-brands fa-conhe-icon fa-js"></i>
+            </div> -->
+            <div class="linguagen figma">
+              <i class="fa-brands fa-conhe-icon fa-figma"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Projetos-->
+
+    <section class="Projetos" id="Projetos">
+      <div class="titulo">
+        <h1>Projetos</h1>
+        <div class="linha animate__animated animate__bounce"></div>
+        <div class="content-projeto">
+          <div class="card">
+            <p>E-shop</p>
+            <img src="assets/img/e-shoop.PNG" alt="E-shop">
+            <a href="https://luanmachadoyt.github.io/E-shop" target="
+            ">Visitar</a>
+          </div>
+          <div class="card">
+            <p>Atigos</p>
+            <img src="assets/img/artigos.PNG" alt="E-shop">
+            <a href="https://luanmachadoyt.github.io/Artigos" target="_blank">Visitar</a>
+          </div>
+          <div class="card">
+            <p>Tela Login</p>
+            <img src="assets/img/landing-page.PNG" alt="E-shop">
+            <a href="https://luanmachadoyt.github.io/tela-login" target="_blank">Visitar</a>
+          </div>
+          <div class="card">
+            <p>Link Tree</p>
+            <img src="assets/img/link-tree.PNG" alt="E-shop">
+            <a href="https://luanmachadoyt.github.io/Link-Tree" target="_blank">Visitar</a>
+          </div>
+          <div class="card">
+            <p>Nike</p>
+            <img src="assets/img/nike.PNG" alt="E-shop">
+            <a href="https://luanmachadoyt.github.io/Nike" target="_blank">Visitar</a>
+          </div>
+          <div class="card">
+            <p>Help VsCode</p>
+            <img src="assets/img/help-vscode.PNG" alt="E-shop">
+            <a href="https://luanmachadoyt.github.io/Help-VsCode/" target="_blank">Visitar</a>
+          </div>
+
+        </div>
+        <div class="link-repositorio">
+          <a href="https://github.com/luanmachadoyt?tab=repositories" target="_blank">Repositorio github <i
+              class="fa-solid fa-paper-plane"></i></a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Servicos -->
+    <section class="servicos" id="servicos">
+      <div class="titulo">
+        <h1>Servicos</h1>
+        <div class="linha"></div>
+        <div class="servicos">
+          <div class="content-servico">
+            <div class="card">
+              <p>UI Design</p>
+            </div>
+            <div class="card">
+              <p>Desenvolvedor Web</p>
+            </div>
+          </div>
+          <div class="link-contratar">
+            <a href="contratar.html">Entrar em contato</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <img src="assets/img/logo-name.png" alt="">
+      <div class="redes-footer">
+        <a class="icones" href="https://instagram.com/luanmachadoyt" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a class="icones" href="https://discord.gg/D5X7bRgazp" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        <a class="icones" href="https://github.com/luanmachadoyt" target="_blank"><i
+            class="fa-brands fa-github"></i></a>
+        <a class="icones" href="https://www.linkedin.com/in/luan-de-almeida-machado-9789721b3/" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a class="icones" href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="direitos">
+        <p>Todos os direitos reservados </p>
+      </div>
+    </div>
+  </footer>
+
+  <!--Script-->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
