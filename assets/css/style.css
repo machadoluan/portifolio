@@ -212,43 +212,41 @@ nav ul a:hover{
 }
 
 .titulo h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 20px;
     font-style: normal;
-    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 14.911px;
+}
+
+.titulo h2 {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 25.274px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
 }
 
 .sobre-conteudo {
     display: flex;
     align-items: center;
-    width: 1200px;
-    height: 551px;
-    
-    margin-bottom: 100px;
-    gap: 30px;
+    padding-top: 100px;
+    gap: 60px;
 }
 
 .sobre-conteudo img {
-    width: 250px;
-    height: 350px;
-    padding-left: 60px;
-}
-
-.linha {
-    width: 200px;
-    height: 2px;
-    background: linear-gradient(to right, transparent, #0D6EFF);
-    margin-bottom: 50px;
-    border-radius: 15px;
-}
-
-.linha-sobre {
-    width: 2px;
-    height: 350px;
-    background: linear-gradient(to top, transparent, #0D6EFF);
-    border-radius: 20px;
+    width: 300px;
 }
 
 .conteudo-sobre {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 40px;
 }
 
 .conteudo-sobre h1 {
@@ -265,35 +263,16 @@ nav ul a:hover{
 }
 
 .conteudo-sobre p {
-    margin-bottom: 2%;
-    min-width: 90%;
-    color: #b2b2b2;
-    transition: all .5s;
+    width: 571px;
+    color: #fff;
+    text-align: justify;
+    font-family: Lexend;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 24px;
+    /* 160% */
 }
-
-.conteudo-sobre p:hover {
-    color: #ffffff;
-    
-}
-
-.btn-cv {
-    width: 180px;
-    height: 55px;
-    background-color: transparent;
-    border-radius: 15px;
-    border: 2px solid #0D6EFF;
-    font-size: 16px;
-    color: white;
-    margin-top: 20px;
-    transition: all .3s ease-in-out;
-}
-
-.btn-cv:hover {
-    background-color: #0D6EFF31;
-    cursor: pointer;
-    
-}
-
 
 /*Conhecimentos*/
 .conhecimentos {
