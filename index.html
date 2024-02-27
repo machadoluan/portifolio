@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luan Machado</title>
+  <meta name="description"
+    content="Bem-vindo ao portfólio de Luan, um jovem desenvolvedor que iniciou sua jornada aos 17 anos, focando em HTML e CSS desde dezembro de 2022. Atualmente, está mergulhando no mundo do JavaScript para aprimorar suas habilidades. Este é apenas o início de uma jornada repleta de oportunidades e desafios no mundo do desenvolvimento web.">
+
+
+  <!-- Links -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/jquery.css">
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script src="https://kit.fontawesome.com/7c3aef27c1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="blur-container">
+    <div class="blur-overlay" id="blurOverlay"></div>
+
+    <!--Primeira parte-->
+    <div class="background">
+      <header class="menu animate__animated animate__fadeInDown">
+        <nav>
+
+          <div class="logo">
+            <a href="#"><img src="assets/img/logo-name.png" alt="Logo"></a>
+          </div>
+
+          <div id="nav-list">
+            <ul id="menu">
+              <li><a href="#" class="custom-underline" onclick="removeMenu()">INÍCIO</a></li>
+              <li><a href="#sobre" class="custom-underline" onclick="removeMenu()">SOBRE</a></li>
+              <li><a href="#conhecimentos" class="custom-underline" onclick="removeMenu()">CONHECIMENTOS</a></li>
+              <li><a href="#Projetos" class="custom-underline" onclick="removeMenu()">PROJETOS</a></li>
+              <li><a href="#servicos" class="custom-underline" onclick="removeMenu()">SERVIÇOS</a></li>
+            </ul>
+          </div>
+
+          <div class="mobile-menu" id="nav">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="informacoes ">
+        <div class="logo-imagen">
+          <img src="assets/img/logo.png" alt="">
+        </div>
+
+        <div class="inf-text">
+          <h1>Luan Machado</h1>
+          <p id="descricao"></p>
+          <div class="redes animate__animated animate__lightSpeedInRight">
+            <a class="icones" href="https://instagram.com/luanmachado.js" target="_blank"><i
+                class="fa-brands fa-redes-icon fa-instagram"></i></a>
+            <a class="icones" href="https://discord.gg/D5X7bRgazp" target="_blank"><i
+                class="fa-brands fa-redes-icon fa-discord"></i></a>
+            <a class="icones" href="https://github.com/machadoluan" target="_blank"><i
+                class="fa-brands fa-redes-icon fa-github"></i></a>
+            <a class="icones" href="https://www.linkedin.com/in/luan-de-almeida-machado-9789721b3/" target="_blank"><i
+                class="fa-brands fa-redes-icon fa-linkedin"></i></a>
+            <a class="icones" href="https://youtube.com/@luanmachadojs" target="_blank"><i
+                class="fa-brands fa-redes-icon fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!--Conteudo do site-->
+      <main>
+        <!--Sobre-->
+        <section class="sobre" id="sobre">
+          <div class="titulo">
+            <h1 id="titulo-sobre">DESENVOLVEDOR FRONTEND</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+              <path d="M31.0875 16.1062L22.5 24.6937L13.8937 16.1063L11.25 18.75L22.5 30L33.75 18.75L31.0875 16.1062Z"
+                fill="white" />
+            </svg>
+            <div class="sobre-conteudo">
+              <img src="assets/img/logo.png" alt="">
+              <div class="conteudo-sobre">
+                <h2>LUAN MACHADO, 18</h2>
+                <p id="txt-sobre">Sejam bem-vindos ao meu portfólio. Meu nome é Luan, e aos 17 anos, iniciei minha
+                  jornada na área de desenvolvimento em dezembro de 2022. Até o momento, concentrei meus esforços
+                  principalmente em HTML e CSS. <br> <br>
+                  Atualmente, estou embarcando no módulo de JavaScript, aspirando aprimorar ainda mais minhas
+                  habilidades e qualificações. Este é apenas o começo de minha jornada, e estou ansioso para as
+                  oportunidades e desafios que o futuro reserva. Agradeço por sua visita e espero compartilhar mais
+                  sobre meu progresso em breve.</p>
+              </div>
+            </div>
+          </div>
+        </section> 
+
+        <!--Conhecimentos-->
+        <section class="conhecimentos" id="conhecimentos">
+          <div class="titulo">
+            <h1 id="titulo-conhe">Conhecimentos</h1>
+            <div class="conteudo-conhecimentos">
+              <div class=" ">
+                <img class="html linguagem" src="assets/icons/html.png" alt="">
+              </div>
+              <div class=" ">
+                <img class="css linguagem " src="assets/icons/css.png" alt="">
+              </div>
+              <div class=" ">
+                <img class="figma linguagem" src="assets/icons/figma.png" alt="">
+              </div>
+              <div class="">
+                <img class="js linguagem" src="assets/icons/js.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="result">
+            <h3 id="text-padrao">Posicione o cursor sobre os ícones para visualizar minha experiência e habilidades
+              demonstradas.</h3>
+            <h3 id="text-html" class="text hidden">HTML5 é a tecnologia por trás de sites modernos, tornando-os mais
+              interativos e visualmente atrativos.</h3>
+            <h3 id="text-css" class="text hidden">CSS: Estilo para websites, cria design atraente, responsivo e
+              personalizado para uma melhor experiência visual.</h3>
+            <h3 id="text-figma" class="text hidden">Figma: Plataforma colaborativa para design, facilita a criação de
+              interfaces e protótipos interativos de forma eficiente.</h3>
+            <h3 id="text-js" class="text hidden">Js: Potencializa a interatividade em sites, oferecendo funcionalidades
+              dinâmicas e personalizadas que enriquecem a experiência do usuário</h3>
+          </div>
+        </section>
+
+
+        <!--Projetos-->
+
+        <section class="Projetos" id="Projetos">
+          <div class="titulo">
+            <h1>Projetos</h1>
+            <div class="content-projeto">
+              <div class="card">
+                <p>E-shop</p>
+                <img src="assets/img/e-shoop.PNG" alt="E-shop">
+                <a href="https://machadoluan.github.io/projeto-Eshop" target="
+            ">Visitar</a>
+              </div>
+              <div class="card">
+                <p>Atigos</p>
+                <img src="assets/img/artigos.PNG" alt="Artigos">
+                <a href="https://machadoluan.github.io/projeto-artigos" target="_blank">Visitar</a>
+              </div>
+              <div class="card">
+                <p>Tela Login</p>
+                <img src="assets/img/landing-page.PNG" alt="Tela login">
+                <a href="https://machadoluan.github.io/projeto-TelaLogin" target="_blank">Visitar</a>
+              </div>
+              <div class="card">
+                <p>Link Tree</p>
+                <img src="assets/img/link-tree.PNG" alt="Link-Tree">
+                <a href="https://luanmachado.tech/LinkTree" target="_blank">Visitar</a>
+              </div>
+              <div class="card">
+                <p>Nike</p>
+                <img src="assets/img/nike.PNG" alt="Nike">
+                <a href="https://machadoluan.github.io/projeto-nike" target="_blank">Visitar</a>
+              </div>
+              <div class="card">
+                <p>Help VsCode</p>
+                <img src="assets/img/help-vscode.PNG" alt="Help-Vscode">
+                <a href="https://machadoluan.github.io/projeto-vscode" target="_blank">Visitar</a>
+              </div>
+              <div class="card">
+                <p>Todo-List</p>
+                <img src="assets/img/todo-list.png" alt="Todo-List">
+                <a href="https://machadoluan.github.io/projeto-TodoList/" target="_blank">Visitar</a>
+              </div>
+            </div>
+            <div class="link-repositorio">
+              <a href="https://github.com/machadoluan?tab=repositories" target="_blank">Repositorio github <i
+                  class="fa-solid fa-paper-plane"></i></a>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Servicos -->
+        <section class="servicos" id="servicos">
+          <div class="titulo">
+            <h1>Servicos</h1>
+            <div class="servicos">
+              <div class="content-servico">
+                <div class="card-website">
+                  <h3>Criação de Site</h3>
+                  <p>Fazemos o seu site totalmente personalizado com a sua marca..</p>
+                  <button>Orçamento</button>
+                </div>
+                <div class="card-website">
+                  <h3>Design</h3>
+                  <p>Fazemos o seu site totalmente personalizado com a sua marca..</p>
+                  <button>Orçamento</button>
+                </div>
+                <div class="card-website">
+                  <h3>Edição de videos</h3>
+                  <p>Fazemos o seu site totalmente personalizado com a sua marca..</p>
+                  <button>Orçamento</button>
+                </div>
+              </div>
+              <div class="link-contratar">
+                <button id="btnContato">Entrar em contato</button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="entrarEmContato">
+          <i class="fa-solid fa-x" id="closeContato"></i>
+          <h1 id="teste">Entrar em contato</h1>
+          <form action="https://formsubmit.co/machadoluan87@gmail.com" method="POST">
+            <div class="form">
+              <input type="text" name="nome" id="input-name" placeholder="Digite seu nome" required autocomplete="off">
+              <input type="email" name="email" id="email" placeholder="Digite seu email." required autocomplete="off">
+              <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite uma mensagem" required></textarea>
+
+            </div>
+            <button id="submit" type="submit">Enviar</button>
+          </form>
+          <div class="outro">
+
+            <div class="content-linha">
+              <div class="linha"></div>
+              <div class="or">OU</div>
+              <div class="linha-or"></div>
+            </div>
+
+            <div class="icons">
+              <a href=""><i class="fa-brands fa-whatsapp icon-contt"></i></a>
+              <i class="fa-brands fa-instagram icon-contt"></i>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-content">
+          <img src="assets/img/logo-name.png" alt="">
+          <div class="redes-footer">
+            <a class="icones" href="https://instagram.com/luanmachado.js" target="_blank"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a class="icones" href="https://discord.gg/D5X7bRgazp" target="_blank"><i
+                class="fa-brands fa-discord"></i></a>
+            <a class="icones" href="https://github.com/machadoluan" target="_blank"><i
+                class="fa-brands fa-github"></i></a>
+            <a class="icones" href="https://www.linkedin.com/in/luan-de-almeida-machado-9789721b3/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i></a>
+            <a class="icones" href="https://youtube.com/@luanmachadojs" target="_blank"><i
+                class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="direitos">
+            <p>Todos os direitos reservados </p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!--Script-->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

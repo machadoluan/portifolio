@@ -1,0 +1,51 @@
+main {
+    height: 100vh;
+    color: #2E2E36;
+    background-image: url(../img/hero-background.webp);
+    background-size: cover;
+    background-position: center center;
+}
+
+#main-contratar{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+main .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    
+}
+
+main .container h1 {
+    font-size: 36px;
+}
+
+main .container .button-contact {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+
+main .container .button-contact #email {
+    border: 3px solid #0D6EFF;
+    padding: 10px 45px;
+    border-radius: 9px;
+    transition: all 0.2s ease-in-out;
+}
+
+main .container .button-contact #email:hover {
+    background-color: #0d6eff88;
+    padding: 10px 45px;
+    border-radius: 9px;
+}
