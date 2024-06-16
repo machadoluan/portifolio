@@ -10,6 +10,7 @@
         width: 90%;
         height: 500px;
     }
+
     .conteudo-sobre h1 {
         font-size: 16px;
     }
@@ -40,15 +41,18 @@
         height: 170px;
         transition: all .3s;
     }
-    #nav-list.active .menu{
+
+    #nav-list.active .menu {
         background-color: #333333;
     }
-    nav{
+
+    nav {
         justify-content: space-between;
     }
-    #menu{
+
+    #menu {
         display: none;
-        
+
         position: absolute;
         width: 100%;
         top: 89px;
@@ -58,23 +62,25 @@
         z-index: 1000;
         text-align: center;
     }
+
     .mobile-menu {
         display: block;
     }
-    #nav-list.active #menu{
-        display: flex ;
+
+    #nav-list.active #menu {
+        display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    #menu a{
+    #menu a {
         font-size: 20px;
         justify-content: center;
     }
 }
 
 @media screen and (max-width: 950px) {
-    .sobre-conteudo{
+    .sobre-conteudo {
         display: flex;
         align-items: center;
     }
@@ -95,6 +101,7 @@
         color: #b2b2b2;
         font-size: 15px;
     }
+
     .result {
         display: flex;
         width: 80%;
@@ -102,15 +109,19 @@
         margin: 0 auto;
         padding-bottom: 50px;
     }
+
     .redes-footer {
         display: none !important;
     }
-    .sobre-conteudo{
+
+    .sobre-conteudo {
         flex-direction: column;
     }
+
     .conteudo-sobre {
         text-align: center;
     }
+
     .sobre-conteudo img {
         width: 175px;
         height: 250px;
@@ -158,8 +169,9 @@
         width: 150px;
     }
 
-    .linguagens {
-        flex-wrap: nowrap;
+    .conteudo-conhecimentos {
+        height: 300px;
+        flex-wrap: wrap;
         flex-direction: column;
     }
 
@@ -171,21 +183,25 @@
         width: 80%;
     }
 
-    .conteudo-conhecimentos{
+    .conteudo-conhecimentos {
         gap: 3rem;
         flex-direction: column;
     }
-    .linguagem{
-        width: 100px;
+
+    .linguagem {
+        width: 50px;
     }
-    #titulo-conhe{
+
+    #titulo-conhe {
         font-size: 16px;
         padding-bottom: 100px;
     }
+
     footer .footer-content {
         flex-direction: column;
     }
 }
+
 @media screen and (max-width: 338px) {
     .redes {
         width: 90%;
@@ -195,7 +211,8 @@
         font-size: 30px;
         transition: all .3s;
     }
-    #titulo-conhe{
+
+    #titulo-conhe {
         font-size: 12px;
     }
 
@@ -203,4 +220,5 @@
         font-size: 12px;
     }
 }
+
 /*---------------------------------------------------------------*/

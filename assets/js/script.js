@@ -28,102 +28,124 @@ function removeMenu() {
 }
 botao.addEventListener("click", apertei)
 
-//--------------------------------HTML-----------------------------------------------------//
 
-var icones = document.querySelector(".html")
 
-icones.addEventListener("mouseover", function () {
+document.querySelectorAll(".linguagem").forEach(function (icone) {
+    icone.addEventListener("mouseover", function () {
+        var tipo = icone.classList[1]; // assuming the second class is the type (html, css, figma, js)
+        var legenda = document.querySelector("#text-" + tipo);
+        var texto_padrao = document.querySelector("#text-padrao");
 
-    var legenda = document.querySelector("#text-html")
+        legenda.classList.remove("hidden");
+        texto_padrao.classList.add("hidden");
+    });
 
-    var texto_padrao = document.querySelector("#text-padrao")
+    icone.addEventListener("mouseout", function () {
+        var tipo = icone.classList[1];
+        var legenda = document.querySelector("#text-" + tipo);
+        var texto_padrao = document.querySelector("#text-padrao");
 
-    legenda.classList.remove("hidden")
-    texto_padrao.classList.add("hidden")
+        legenda.classList.add("hidden");
+        texto_padrao.classList.remove("hidden");
+    });
+});
 
-})
+// //--------------------------------HTML-----------------------------------------------------//
 
-icones.addEventListener("mouseout", function () {
+// var icones = document.querySelector(".html")
 
-    var legenda = document.querySelector("#text-html")
-    var texto_padrao = document.querySelector("#text-padrao")
+// icones.addEventListener("mouseover", function () {
 
-    legenda.classList.add("hidden")
-    texto_padrao.classList.remove("hidden")
+//     var legenda = document.querySelector("#text-html")
 
-})
-//-------------------------------CSS---------------------------------------------------//
+//     var texto_padrao = document.querySelector("#text-padrao")
 
-var icones = document.querySelector(".css")
+//     legenda.classList.remove("hidden")
+//     texto_padrao.classList.add("hidden")
 
-icones.addEventListener("mouseover", function () {
+// })
 
-    var legenda = document.querySelector("#text-css")
+// icones.addEventListener("mouseout", function () {
 
-    var texto_padrao = document.querySelector("#text-padrao")
+//     var legenda = document.querySelector("#text-html")
+//     var texto_padrao = document.querySelector("#text-padrao")
 
-    legenda.classList.remove("hidden")
-    texto_padrao.classList.add("hidden")
+//     legenda.classList.add("hidden")
+//     texto_padrao.classList.remove("hidden")
 
-})
+// })
+// //-------------------------------CSS---------------------------------------------------//
 
-icones.addEventListener("mouseout", function () {
+// var icones = document.querySelector(".css")
 
-    var legenda = document.querySelector("#text-css")
-    var texto_padrao = document.querySelector("#text-padrao")
+// icones.addEventListener("mouseover", function () {
 
-    legenda.classList.add("hidden")
-    texto_padrao.classList.remove("hidden")
+//     var legenda = document.querySelector("#text-css")
 
-})
-//--------------------------------figma-----------------------------------------------------//
+//     var texto_padrao = document.querySelector("#text-padrao")
 
-var icones = document.querySelector(".figma")
+//     legenda.classList.remove("hidden")
+//     texto_padrao.classList.add("hidden")
 
-icones.addEventListener("mouseover", function () {
+// })
 
-    var legenda = document.querySelector("#text-figma")
+// icones.addEventListener("mouseout", function () {
 
-    var texto_padrao = document.querySelector("#text-padrao")
+//     var legenda = document.querySelector("#text-css")
+//     var texto_padrao = document.querySelector("#text-padrao")
 
-    legenda.classList.remove("hidden")
-    texto_padrao.classList.add("hidden")
+//     legenda.classList.add("hidden")
+//     texto_padrao.classList.remove("hidden")
 
-})
+// })
+// //--------------------------------figma-----------------------------------------------------//
 
-icones.addEventListener("mouseout", function () {
+// var icones = document.querySelector(".figma")
 
-    var legenda = document.querySelector("#text-figma")
-    var texto_padrao = document.querySelector("#text-padrao")
+// icones.addEventListener("mouseover", function () {
 
-    legenda.classList.add("hidden")
-    texto_padrao.classList.remove("hidden")
+//     var legenda = document.querySelector("#text-figma")
 
-})
-//--------------------------------js-----------------------------------------------------//
+//     var texto_padrao = document.querySelector("#text-padrao")
 
-var icones = document.querySelector(".js")
+//     legenda.classList.remove("hidden")
+//     texto_padrao.classList.add("hidden")
 
-icones.addEventListener("mouseover", function () {
+// })
 
-    var legenda = document.querySelector("#text-js")
+// icones.addEventListener("mouseout", function () {
 
-    var texto_padrao = document.querySelector("#text-padrao")
+//     var legenda = document.querySelector("#text-figma")
+//     var texto_padrao = document.querySelector("#text-padrao")
 
-    legenda.classList.remove("hidden")
-    texto_padrao.classList.add("hidden")
+//     legenda.classList.add("hidden")
+//     texto_padrao.classList.remove("hidden")
 
-})
+// })
+// //--------------------------------js-----------------------------------------------------//
 
-icones.addEventListener("mouseout", function () {
+// var icones = document.querySelector(".js")
 
-    var legenda = document.querySelector("#text-js")
-    var texto_padrao = document.querySelector("#text-padrao")
+// icones.addEventListener("mouseover", function () {
 
-    legenda.classList.add("hidden")
-    texto_padrao.classList.remove("hidden")
+//     var legenda = document.querySelector("#text-js")
 
-})
+//     var texto_padrao = document.querySelector("#text-padrao")
+
+//     legenda.classList.remove("hidden")
+//     texto_padrao.classList.add("hidden")
+
+// })
+
+// icones.addEventListener("mouseout", function () {
+
+//     var legenda = document.querySelector("#text-js")
+//     var texto_padrao = document.querySelector("#text-padrao")
+
+//     legenda.classList.add("hidden")
+//     texto_padrao.classList.remove("hidden")
+
+// })
 // ------------------------------ ENTRAR EM CONTATO ----------------------------------------------//
 
 
@@ -134,16 +156,12 @@ const mensagem = document.getElementById("mensagem");
 const inputName = document.getElementById("input-name");
 
 // Open Tela de contato
-function contato(){
+function contato() {
     $(".entrarEmContato").css("display", "block")
     $(".blur-overlay").css("display", "block")
     $("body").css("overflow", "hidden")
-<<<<<<< HEAD
-=======
-
->>>>>>> 193555571b5007bc72be5043153ad08ed10b6924
 }
-function closeCntt(){
+function closeCntt() {
     $(".entrarEmContato").css("display", "none")
     $(".blur-overlay").css("display", "none")
     $("body").css("overflow", "auto")
