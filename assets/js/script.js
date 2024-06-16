@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         speed: 100,
         loop: false,
     })
-        .type('Desenvolvedor Front-end!', { delay: 900 }).delete(24)
-        .type('Front-end Developer!', { delay: 900 }).delete(21)
-        .type('Design UX, Ui!', { delay: 900 })
+        .type('Desenvolvedor Front-end.', { delay: 900 }).delete(24)
+        .type('Front-end Developer.', { delay: 900 }).delete(21)
+        .type('Design UX, Ui.', { delay: 900 })
         .go()
 
 });

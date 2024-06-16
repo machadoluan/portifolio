@@ -198,6 +198,7 @@
 
     footer .footer-content {
         flex-direction: column;
+        padding: 50px;
     }
 }
 
