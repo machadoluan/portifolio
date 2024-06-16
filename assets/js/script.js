@@ -138,6 +138,10 @@ function contato(){
     $(".entrarEmContato").css("display", "block")
     $(".blur-overlay").css("display", "block")
     $("body").css("overflow", "hidden")
+<<<<<<< HEAD
+=======
+
+>>>>>>> 193555571b5007bc72be5043153ad08ed10b6924
 }
 function closeCntt(){
     $(".entrarEmContato").css("display", "none")
