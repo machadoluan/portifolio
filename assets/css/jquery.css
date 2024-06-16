@@ -10,11 +10,6 @@
         width: 90%;
         height: 500px;
     }
-
-    .linha-sobre {
-        display: none;
-    }
-
     .conteudo-sobre h1 {
         font-size: 16px;
     }
@@ -48,7 +43,9 @@
     #nav-list.active .menu{
         background-color: #333333;
     }
-
+    nav{
+        justify-content: space-between;
+    }
     #menu{
         display: none;
         
@@ -77,13 +74,9 @@
 }
 
 @media screen and (max-width: 950px) {
-    .conteudo-conhecimentos {
+    .sobre-conteudo{
         display: flex;
-        flex-direction: column;
-        text-align: center;
         align-items: center;
-        width: 90%;
-        padding-top: 70px;
     }
 
     .conteudo-conhecimentos .texto-conhe {
@@ -102,26 +95,31 @@
         color: #b2b2b2;
         font-size: 15px;
     }
-
+    .result {
+        display: flex;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
     .redes-footer {
         display: none !important;
     }
-}
-
-@media screen and (max-width: 790px) {
+    .sobre-conteudo{
+        flex-direction: column;
+    }
+    .conteudo-sobre {
+        text-align: center;
+    }
     .sobre-conteudo img {
         width: 175px;
         height: 250px;
     }
+}
 
-    .btn-cv {
-        width: 170px;
-        height: 50px;
-    }
-
-    #txt-sobre {
-        width: 90%;
-        color: #b2b2b2;
+@media screen and (max-width: 790px) {
+    .entrarEmContato {
+        width: 80%;
     }
 }
 
@@ -173,22 +171,21 @@
         width: 80%;
     }
 
+    .conteudo-conhecimentos{
+        gap: 3rem;
+        flex-direction: column;
+    }
+    .linguagem{
+        width: 100px;
+    }
+    #titulo-conhe{
+        font-size: 16px;
+        padding-bottom: 100px;
+    }
     footer .footer-content {
         flex-direction: column;
     }
 }
-
-@media screen and (max-width: 338px) {
-    .conteudo-sobre h3 {
-        font-size: 12px;
-    }
-
-    .conteudo-conhecimentos {
-        gap: 0;
-    }
-
-}
-
 @media screen and (max-width: 338px) {
     .redes {
         width: 90%;
@@ -198,10 +195,12 @@
         font-size: 30px;
         transition: all .3s;
     }
+    #titulo-conhe{
+        font-size: 12px;
+    }
 
     .direitos p {
         font-size: 12px;
     }
 }
-
 /*---------------------------------------------------------------*/
